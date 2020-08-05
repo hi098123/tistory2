@@ -1,9 +1,9 @@
 (function() {
+    var s=document.querySelectorAll('script');
+    var q=s[s.length-1].src.split('?')[1] || 'c=5';
+    var color=q.split('c=')[1].split('&')[0];
     function ui_init(){
     	var imgs=document.querySelectorAll('img[src*="blogs/image/category/new_ico_1.gif"]');
-        var s=document.querySelectorAll('script');
-        var q=s[s.length-1].src.split('?')[1] || 'c=5';
-        var color=q.split('c=')[1].split('&')[0];
         for (var i = 0; i < imgs.length; i++) {
             imgs[i].src=imgs[i].src.split('new_ico_1.gif').join('new_ico_'+color+'.gif');
         }
