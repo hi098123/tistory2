@@ -1,0 +1,45 @@
+.button{  
+  float:left;
+  width:200px;
+  padding:20px 30px;
+  margin:30px;
+  text-align:center;
+  font-weight:bold;
+  cursor:pointer;
+  transition:background .5s;
+}
+
+#failure{
+  background:#f44336;
+  color:#f0f0f0;  
+}
+
+.notify{  
+  position:absolute;
+  top:0px;
+  width:100%;
+  height:0;  
+  box-sizing:border-box;
+  color:white;  
+  text-align:center;
+  background:rgba(244, 67, 54,.6);
+  overflow:hidden;
+  box-sizing:border-box;
+  transition:height .2s;
+  z-index:9999999;
+}
+
+#notifyType:before{
+  display:block;
+  margin-top:15px; 
+  
+}
+
+.active{  
+  height:100px;
+}
+
+.failure:before{
+  white-space:pre-line;
+  content:"img1.daumcdn.net은 다음카카오의 이미지서버입니다. \A\A Avast백신을 사용하시나요? 최근 업데이트로 다음(daum.net)의 메인에서도 일부 이미지가 차단될 수 있습니다.";
+}
