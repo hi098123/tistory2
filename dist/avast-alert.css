@@ -22,21 +22,22 @@
   box-sizing:border-box;
   color:white;  
   text-align:center;
-  background:rgba(244, 67, 54,.6);
+  background:rgba(76,175,80);
   overflow:hidden;
   box-sizing:border-box;
   transition:height .2s;
   z-index:9999999;
+  padding: 20px;
+  line-height: 1.5;
 }
 
 #notifyType:before{
   display:block;
-  margin-top:15px; 
   
 }
 
 .active{  
-  height:100px;
+  height: auto;
 }
 
 .failure:before{
