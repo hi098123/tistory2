@@ -11,7 +11,7 @@
 			parent.insertBefore(notice,comm);
     	}
     }
-	if(document.querySelector('form[action*="/comment/add/"]')){
+	if(document.querySelector('form[action*="/comment/add/"],div[id^="entry"][id$="Comment"]')){
 		ui_init();
 	}else if(document.addEventListener){
         document.addEventListener("DOMContentLoaded", function() {
