@@ -1,7 +1,7 @@
 (function() {
     function ui_init(){
     	if(window.location.hostname!=TistoryBlog.tistoryUrl.split('/')[2]){
-    		var comm=document.querySelector('form[action*="/comment/add/"]');
+    		var comm=document.querySelector('form[action*="/comment/add/"],div[id^="entry"][id$="Comment"]');
 			var parent=comm.parentNode;
 			var notice=document.createElement('div');
 			var num='';
